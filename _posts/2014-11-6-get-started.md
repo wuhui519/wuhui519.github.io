@@ -24,6 +24,7 @@ front-matter必须放在第一行，前面不能有空格或换行，否则会�
 
 
 如果文件提交后Jeykll解析错误，会收到一封GitHub Page build failure邮件。根据GitHub的提示，build失败的原因一般在[失败原因](https://help.github.com/articles/troubleshooting-github-pages-build-failures)。我第一次碰到这个错误时，根据issue里别人的提示，重新fork一次就好了。其它时候一般是front-matter格式错误。
+
 解决了这些问题后，就可以使用GitHub Pages发文章了。当然，使用标签、归档、评论等功能需要使用Jeykll的插件，偶是GitHub Pages支持的Jeykll插件不多，一般使用Jeykll本地build后，直接上传生成的静态网页可以解决这个问题。Jeykll更多的高级特性继续发掘中。。。
 
 ######参考
