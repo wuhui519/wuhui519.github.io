@@ -18,7 +18,10 @@ title: How I get my GitHub Pages to work
 #####所有的文章都放在/_posts/文件夹下，jeykll支持markdown文件的解析，新建的markdown文件以year-month-day-title.md的格式命名。重要的一点是，markdown文件必须包含[Additional front-matter variables](http://jekyllrb.com/docs/frontmatter/)，格式为：
 front-matter必须放在第一行，前面不能有空格或换行，否则会造成build错误
 #####commit新建的md文件，再次刷新wuhui519.github.io文件，就可以看到新增的文章了
-
+\---
+layout: post
+title: Blogging Like a Hacker
+\---
 ###如果文件提交后jeykll解析错误，会收到一封GitHub Page build failure邮件。根据GitHub的提示，build失败的常见原因在[这里](https://help.github.com/articles/troubleshooting-github-pages-build-failures)。我第一次碰到这个错误时，根据issue里别人的提示，重新fork一次就好了。其它时候一般是front-matter格式错误。
 
 ###解决了这些问题后，就可以使用GitHub Pages发文章了。当然，使用标签、归档、评论等功能需要使用jeykll的插件，但是GitHub Pages支持的jeykll插件不多。要使用插件的话，一般使用jeykll本地build后，直接上传build后的静态网页可以解决这个问题。Jeykll更多的高级特性继续发掘中。。。
