@@ -4,12 +4,14 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+an iOS developer, userd to be a web developer
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself. 
+2009-2012 server-end developer
+2012-2013 javascript, css, html deleveper
+2013- iOS developer
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[wuhui519@gmail.com](mailto:wuhui519@gmail.com)
