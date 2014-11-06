@@ -4,6 +4,9 @@ title: How I get my GitHub Pages to work
 ---
 
 ##开始
+- test
+- test2
+- test3
 
 这是开始
 
