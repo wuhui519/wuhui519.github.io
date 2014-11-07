@@ -34,7 +34,7 @@ view.layer.maskToBounds = YES;
 {% endhighlight %}
 
 ###使用shouldRasterize属性
-使用CALayer的cornerRadius和maskToBounds属性最主要的性能瓶颈在于每次渲染时繁复的blend layer计算，造成滚动时页面卡顿的现象。这时可以使用CALayer的shouldRasterize属性，设置layer.shouldRasterize = YES。当这个属性设为YES的时候，CA会cache住栅格化的图形，滚动时直接从cache中取出图形显示，避免了反复的层计算。
+使用CALayer的cornerRadius和maskToBounds属性最主要的性能瓶颈在于每次渲染时繁复的blend layer计算，计算量大造成卡顿。这时可以使用CALayer的shouldRasterize属性，设置layer.shouldRasterize = YES。当这个属性设为YES的时候，CA会cache住栅格化的图形，滚动时直接从cache中取出图形显示，避免了反复的层计算。
 由于shouldRasterize会cache和重用layer，所以它适用于layer的内容不经常变化的情况。如果layer的内容经常变化，每次变化都需要重新栅格化layer、重新cache，反而会使得性能更差。
 使用shouldRasterize的例子为：
 {% highlight cpp %}
