@@ -13,6 +13,7 @@ view.layer.maskToBounds = YES;
 
 ###直接使用圆角图片覆盖原图
 ![mask picture](http://dream.ph.126.net/PPty8ZAqxoik7_LHyZAZyQ==/3853788255403936)
+
 这种方法适用于背景是纯色的情况，直接把圆角mask图片覆盖原图即可。这种方法比较灵活，还可以适用于各种形状的mask。
 
 ###在子线程绘制圆角图片，绘制好后到主线程显示
