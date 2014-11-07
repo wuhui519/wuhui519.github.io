@@ -8,7 +8,7 @@ title: 圆角UIView的几种实现方案
 view.layer.cornerRadius = 5.0f;
 view.layer.maskToBounds = YES;
 {% endhighlight %}
-如果在UITableViewCell中使用这种方法绘制圆角，会造成table滚动时的卡顿。卡顿的原因主要是系统的渲染分成了两个部分：屏幕上的渲染和屏幕外（offscreen）CALayer的渲染。offscrren渲染完全是计算出来的，不能用到硬件加速，而每次table滚动时，都需要重新渲染这两个部分，造成GPU计算量大而卡顿。
+如果在UITableViewCell中使用这种方法绘制圆角，会造成table滚动时的卡顿。卡顿的原因主要是系统的渲染分成了两个部分：屏幕上（onscreen）的渲染和屏幕外（offscreen）CALayer的渲染。offscrren渲染完全是计算出来的，不能用到硬件加速，而每次table滚动时，都需要重新渲染这两个部分，造成GPU计算量大而卡顿。
 要解决这种卡顿一般实现方案有三种：
 
 ###直接使用圆角图片覆盖原图
