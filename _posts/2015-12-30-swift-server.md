@@ -2,7 +2,7 @@
 layout: post
 title: 在Linux上架设Perfect服务器
 ---
-#在Linux上架设Perfect服务器
+
 Swift是一门可以用来写服务端的语言，本文记录了搭建基于Swift的[Perfect](https://github.com/PerfectlySoft/Perfect)服务器的步骤。Swift暂时只支持Linux的Ubuntu，本文安装的环境是Ubuntu 14.04.3，使用OS X的Terminal远程到云服务器上安装完成。
 ### 一、SSH到远程Ubuntu服务器
 
